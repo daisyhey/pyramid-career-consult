@@ -1,0 +1,355 @@
+.report-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+
+  &.loading {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.loading-text {
+  font-size: 32rpx;
+  color: #666;
+}
+
+// Header
+.report-header {
+  background: linear-gradient(135deg, #2E5BFF 0%, #1E3A8A 100%);
+  padding: 40rpx 30rpx;
+  text-align: center;
+
+  .header-title {
+    display: block;
+    font-size: 40rpx;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12rpx;
+  }
+
+  .header-subtitle {
+    font-size: 26rpx;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+// Content
+.report-content {
+  flex: 1;
+  padding: 30rpx;
+}
+
+// Section Title
+.section-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 24rpx;
+  padding-left: 16rpx;
+  border-left: 6rpx solid #2E5BFF;
+}
+
+// Score Card
+.score-card {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
+
+  .score-circle {
+    width: 180rpx;
+    height: 180rpx;
+    background: linear-gradient(135deg, #2E5BFF 0%, #1E3A8A 100%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .score-value {
+      font-size: 56rpx;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .score-label {
+      font-size: 24rpx;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .score-rank {
+    .rank-text {
+      font-size: 32rpx;
+      font-weight: 600;
+      color: #2E5BFF;
+    }
+  }
+}
+
+// Radar Section
+.radar-section {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
+
+  .radar-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 20rpx;
+  }
+
+  .radar-item {
+    display: flex;
+    align-items: center;
+
+    .radar-bar-container {
+      width: 60%;
+      height: 24rpx;
+      background: #f0f0f0;
+      border-radius: 12rpx;
+      margin-right: 20rpx;
+      overflow: hidden;
+
+      .radar-bar {
+        height: 100%;
+        border-radius: 12rpx;
+        transition: width 0.5s ease;
+      }
+    }
+
+    .radar-info {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+
+      .radar-label {
+        font-size: 28rpx;
+        color: #666;
+      }
+
+      .radar-value {
+        font-size: 28rpx;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Advantage Section
+.advantage-section {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
+
+  .advantage-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20rpx;
+  }
+
+  .advantage-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 20rpx;
+    background: #f8f9fa;
+    border-radius: 12rpx;
+
+    .advantage-icon {
+      font-size: 40rpx;
+      margin-right: 16rpx;
+    }
+
+    .advantage-content {
+      flex: 1;
+
+      .advantage-title {
+        display: block;
+        font-size: 28rpx;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 8rpx;
+      }
+
+      .advantage-text {
+        font-size: 26rpx;
+        color: #666;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+// Recommendation Section
+.recommendation-section {
+  margin-bottom: 30rpx;
+
+  .reasons-card {
+    background: #fff;
+    border-radius: 16rpx;
+    padding: 30rpx;
+    margin-top: 20rpx;
+    box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
+
+    .reasons-title {
+      display: block;
+      font-size: 30rpx;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 20rpx;
+    }
+
+    .reason-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 16rpx;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .reason-dot {
+        color: #22c55e;
+        margin-right: 12rpx;
+        font-size: 28rpx;
+      }
+
+      .reason-text {
+        flex: 1;
+        font-size: 28rpx;
+        color: #666;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+// Roadmap Section
+.roadmap-section {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
+
+  .roadmap-timeline {
+    .timeline-item {
+      display: flex;
+      padding-bottom: 30rpx;
+      position: relative;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 24rpx;
+        top: 56rpx;
+        bottom: 0;
+        width: 2rpx;
+        background: #e5e7eb;
+      }
+
+      .timeline-marker {
+        width: 48rpx;
+        height: 48rpx;
+        background: linear-gradient(135deg, #2E5BFF 0%, #1E3A8A 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20rpx;
+        flex-shrink: 0;
+
+        .timeline-number {
+          color: #fff;
+          font-size: 24rpx;
+          font-weight: 600;
+        }
+      }
+
+      .timeline-content {
+        flex: 1;
+
+        .phase-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 12rpx;
+
+          .phase-name {
+            font-size: 30rpx;
+            font-weight: 600;
+            color: #1a1a1a;
+          }
+
+          .phase-duration {
+            font-size: 24rpx;
+            color: #2E5BFF;
+            background: rgba(46, 91, 255, 0.1);
+            padding: 4rpx 12rpx;
+            border-radius: 12rpx;
+          }
+        }
+
+        .task-list {
+          .task-item {
+            display: block;
+            font-size: 26rpx;
+            color: #666;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+// CTA
+.report-cta {
+  padding: 20rpx 0 40rpx;
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96rpx;
+    border-radius: 48rpx;
+    font-size: 32rpx;
+    font-weight: 600;
+    margin-bottom: 20rpx;
+
+    &.btn-primary {
+      background: linear-gradient(135deg, #2E5BFF 0%, #1E3A8A 100%);
+      color: #fff;
+      box-shadow: 0 8rpx 20rpx rgba(46, 91, 255, 0.3);
+
+      &:active {
+        opacity: 0.9;
+        transform: scale(0.98);
+      }
+    }
+
+    &.btn-secondary {
+      background: #f0f0f0;
+      color: #333;
+
+      &:active {
+        background: #e0e0e0;
+      }
+    }
+  }
+}
