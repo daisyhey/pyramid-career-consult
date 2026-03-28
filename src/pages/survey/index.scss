@@ -1,0 +1,218 @@
+.survey-index {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+}
+
+// Header
+.survey-header {
+  text-align: center;
+  margin-bottom: 50rpx;
+
+  .header-title {
+    display: block;
+    font-size: 44rpx;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16rpx;
+  }
+
+  .header-subtitle {
+    display: block;
+    font-size: 28rpx;
+    color: #666;
+  }
+}
+
+// Process Flow
+.process-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 40rpx 20rpx;
+  margin-bottom: 40rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
+
+  .process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &.active {
+      .step-number {
+        background: #2E5BFF;
+        color: #fff;
+      }
+
+      .step-title {
+        color: #2E5BFF;
+        font-weight: 600;
+      }
+    }
+
+    .step-number {
+      width: 56rpx;
+      height: 56rpx;
+      background: #f0f0f0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28rpx;
+      font-weight: 600;
+      color: #666;
+      margin-bottom: 12rpx;
+    }
+
+    .step-title {
+      font-size: 26rpx;
+      color: #333;
+      margin-bottom: 4rpx;
+    }
+
+    .step-desc {
+      font-size: 20rpx;
+      color: #999;
+    }
+  }
+
+  .process-line {
+    width: 60rpx;
+    height: 2rpx;
+    background: #e5e7eb;
+    margin: 0 10rpx;
+    margin-top: -30rpx;
+  }
+}
+
+// Features Section
+.features-section {
+  margin-bottom: 40rpx;
+
+  .section-title {
+    display: block;
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 24rpx;
+    padding-left: 16rpx;
+    border-left: 6rpx solid #2E5BFF;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rpx;
+
+    .feature-item {
+      background: #fff;
+      border-radius: 16rpx;
+      padding: 30rpx;
+      text-align: center;
+      box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
+
+      .feature-icon {
+        display: block;
+        font-size: 48rpx;
+        margin-bottom: 16rpx;
+      }
+
+      .feature-title {
+        display: block;
+        font-size: 28rpx;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 8rpx;
+      }
+
+      .feature-desc {
+        display: block;
+        font-size: 24rpx;
+        color: #999;
+      }
+    }
+  }
+}
+
+// Time Estimate
+.time-estimate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(46, 91, 255, 0.06);
+  border-radius: 16rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+
+  .time-icon {
+    font-size: 48rpx;
+    margin-bottom: 12rpx;
+  }
+
+  .time-text {
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #2E5BFF;
+    margin-bottom: 8rpx;
+  }
+
+  .time-desc {
+    font-size: 24rpx;
+    color: #666;
+  }
+}
+
+// Privacy Note
+.privacy-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40rpx;
+
+  .privacy-icon {
+    font-size: 28rpx;
+    margin-right: 8rpx;
+  }
+
+  .privacy-text {
+    font-size: 24rpx;
+    color: #999;
+  }
+}
+
+// CTA Section
+.cta-section {
+  padding: 0 30rpx;
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96rpx;
+    border-radius: 48rpx;
+    font-size: 32rpx;
+    font-weight: 600;
+
+    &.btn-primary {
+      background: linear-gradient(135deg, #2E5BFF 0%, #1E3A8A 100%);
+      color: #fff;
+      box-shadow: 0 8rpx 20rpx rgba(46, 91, 255, 0.3);
+
+      &:active {
+        opacity: 0.9;
+        transform: scale(0.98);
+      }
+    }
+  }
+
+  .cta-desc {
+    display: block;
+    text-align: center;
+    font-size: 24rpx;
+    color: #999;
+    margin-top: 20rpx;
+  }
+}
